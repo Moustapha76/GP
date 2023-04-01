@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --color0: #fff;
+    --color1: #c35b00;
+    --color2: #061022;
+    --color3: #ff7800;
+    --font-size: 16px;
+    --radius: 5px;
+    --font-family: 'Roboto', 'sans serif';
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+h2.title-section {
+    margin: 2% 11%;
+    font-size: 50px;
+    color: var(--color1);
+    border-bottom: 1px solid #c35b0059;
+    padding-bottom: 20px;
+}
+
+
+/* main style */
+
+body {
+    color: var(--color0);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    letter-spacing: 1.5px;
+    background: var(--color2);
+}
+
+a {
+    padding: 8px 15px 10px;
+    border-radius: var(--radius);
+    transition: all .3s linear;
+}
+
+.btn {
+    text-decoration: none;
+    background: var(--color1);
+    color: var(--color0);
+    padding: 15px 30px;
+    font-size: 20px;
+    position: relative;
+    margin-top: 20px;
+    transition: all .3s linear;
+}
+
+.btn-group {
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background: var(--color3);
+}
+
+
+/* header */
+
+header {
+    background: var(--color2);
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+}
+
+header nav ul,
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar {
+    width: 100%;
+    padding: 0 2%;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--color0);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background: var(--color1);
+}
+
+header .tel-header {
+    text-decoration: none;
+    color: var(--color0);
+    font-size: 20px;
+}
+
+header .tel-header i {
+    padding-right: 10px;
+    color: var(--color1);
+}
+
+
+/* banner */
+
+.banner {
+    display: flex;
+    background: url(../images/banner/banner-3.jpg);
+    position: relative;
+    align-items: center;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(360deg, #061022, #061022fa, #061022c4, transparent);
+}
+
+.banner .slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+    padding: 0 5%;
+    color: var(--color0);
+    text-align: center;
+    width: 100%;
+}
+
+.banner .slogan p {
+    padding: 0 30%;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.banner .slogan h1 {
+    color: var(--color1);
+}
+
+
+/* main */
+
+section {
+    padding: 5% 10%;
+}
+
+section.gplist {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0px;
+}
+
+section#qui-sommes-nous {
+    display: flex;
+    align-items: center;
+    padding: 0 9% 5%;
+}
+
+section div {
+    margin: 30px;
+    line-height: 1.5;
+}
+
+.accueil-img {
+    width: 50%;
+    height: 433px;
+}
+
+.accueil-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#qui-sommes-nous .bloc-text {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    background: #0d182c;
+    padding: 50px 5%;
+    margin: 0;
+    position: relative;
+    box-shadow: 1px 1px 50px #0003;
+    border-radius: var(--radius);
+    height: auto;
+    width: 80%;
+}
+
+section#qui-sommes-nous .bloc-text p {
+    padding-bottom: 15px;
+}
+
+section#qui-sommes-nous .bloc-text h1 {
+    padding-bottom: 30px;
+}
+
+section#qui-sommes-nous .bloc-text h1:before {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: var(--color1);
+    content: "";
+    top: calc(100% - 30px);
+    left: 0;
+    transform: translate(0);
+}
+
+section h1 {
+    color: var(--color1);
+    position: relative;
+    font-size: 43px;
+    font-weight: 900;
+}
+
+section h1:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: var(--color1);
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section#nos-atouts {
+    background: var(--color2);
+    color: var(--color0);
+    padding: 0% 5%;
+    display: flex;
+}
+
+.bloc-atout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bloc-atout .container {
+    display: flex;
+    grid-gap: 40px;
+    padding: 2% 0;
+}
+
+.bloc-atout h1 {
+    color: var(--color1);
+}
+
+.bloc-atout h1:before {
+    background: var(--color1);
+}
+
+.item-atout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 270px;
+    border: 1px solid #c35b0038;
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+    letter-spacing: 1px;
+}
+
+.item-atout i {
+    font-size: 40px;
+    padding: 15px;
+    color: var(--color1);
+}
+
+.item-atout p {
+    opacity: .7;
+    padding: 10px;
+}
+
+section#nos-services,
+section#nos-prestations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services,
+.prestations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-service,
+.item-prestation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 360px;
+    box-shadow: 10px 10px 30px #00000021;
+    border-radius: var(--radius);
+    padding: 30px;
+    width: 300px;
+    margin: 50px 20px;
+    transition: all .3s linear;
+    background: #0d182c;
+}
+
+.item-service h4,
+.item-prestation h4 {
+    font-size: 20px;
+    padding: 16px 0;
+    color: var(--color1);
+}
+
+.item-service:hover,
+.item-prestation:hover {
+    box-shadow: 10px 10px 30px #00000036;
+    transform: scale(1.05);
+}
+
+.item-service img,
+.item-prestation img {
+    width: 120px;
+    height: auto;
+}
+
+section#nos-destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+section#nos-destinations .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding-top: 4%;
+}
+
+section#nos-destinations .container .left img,
+section#nos-destinations .container .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#nos-destinations .container .left,
+section#nos-destinations .container .right {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+section#reservation {
+    background-image: url(../images/galerie/gp.jpg);
+    height: 40vh;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000006e;
+    background-blend-mode: soft-light;
+}
+
+section#reservation a {
+    border: 1px solid #fff;
+    margin: 15px 30px;
+    padding: 20px 40px;
+    background: transparent;
+}
+
+section#reservation a:hover {
+    background: var(--color1);
+    border-color: var(--color1);
+}
+
+section#formulaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#formulaire .form {
+    display: flex;
+    flex-direction: column;
+}
+
+section#formulaire .form h1:before {
+    left: 0;
+    transform: translate(0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 10%;
+}
+
+input.btn {
+    width: auto;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+    outline: var(--color1);
+}
+
+form input,
+textarea {
+    padding: 15px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+    background: #0d182c;
+    border: transparent;
+    color: var(--color0);
+}
+
+form input::placeholder,
+textarea::placeholder {
+    color: var(--color0);
+    letter-spacing: 2px;
+    opacity: .3
+}
+
+.img-form img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--color1);
+    color: var(--color0);
+    line-height: 1.5;
+    margin: 0;
+    font-family: var(--font-family);
+    letter-spacing: 1px;
+}
+
+
+/* -------------------------- RESERVATION -------------------------- */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 320px;
+    height: 450px;
+    box-shadow: 1px 1px 50px #0000001c;
+    background: #08152c;
+    overflow: hidden;
+}
+
+.card .info {
+    width: 100%;
+    padding: 0 25px;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card .info .name {
+    font-size: 17px;
+}
+
+.card .info span {
+    display: block;
+}
+
+.card .info .price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card .info .date {
+    color: var(--color1);
+    opacity: .8;
+}
+
+.card a {
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+    color: #eee;
+    text-decoration: none;
+    transition: all .3s linear;
+    position: relative;
+    background: var(--color1);
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    background: var(--color3);
+    opacity: 1;
+    letter-spacing: 2.5px;
+}
+
+.card .img {
+    width: 320px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gpinfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2% 0 5%;
+}
+
+.gpinfo table {
+    line-height: 3;
+    margin-top: 20px;
+    border: 1px solid #ffffff1a;
+    padding: 10px 40px;
+}
+
+.gpinfo table td:nth-child(1) {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color1);
+}
+
+.gpinfo div {
+    margin: 0 40px;
+    font-size: 33px;
+}
+
+
+/* footer */
